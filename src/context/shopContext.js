@@ -29,9 +29,16 @@ addItemToCheckout = async () => {};
 
 removeLineItem = async (lineItemIdsToRemove) => {};
 
-fetchAllProducts = async () => {};
+fetchAllProducts = async () => {
+  // Fetch all products in your shop
+  const products = await client.product.fetchAll();
+  this.setState({ products: products });
+};
 
-fetchProductWithHandle = async (handle) => {};
+fetchProductWithHandle = async (handle) => {
+  const product = await client.product.fetchByHandle(handle);
+  this.setState({ product: product });
+};
 
 closeCart = () => {};
 
