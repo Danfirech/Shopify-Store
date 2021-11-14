@@ -21,7 +21,12 @@ state = {
   isMenuOpen: false,
 };
 
-createCheckout = async () => {};
+createCheckout = async () => {
+  const checkout = await client.checkout.create();
+  //using local storage/ its called checkout-id and we are saving checkout.id
+  localstorage.setItem("checkout-id", checkout.id);
+  this.setState({ checkout: checkout });
+};
 
 fetchCheckout = async () => {};
 
