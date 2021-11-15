@@ -21,6 +21,10 @@ class ShopProvider extends Component {
     isMenuOpen: false,
   };
 
+  componentDidMount() {
+    this.createCheckout();
+  }
+
   createCheckout = async () => {
     const checkout = await client.checkout.create();
     //using local storage/ its called checkout-id and we are saving checkout.id
