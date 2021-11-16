@@ -22,7 +22,10 @@ class ShopProvider extends Component {
   };
 
   componentDidMount() {
-    this.createCheckout();
+    if (localStorage.checkout_id) {
+    } else {
+      this.createCheckout();
+    }
   }
 
   createCheckout = async () => {
@@ -32,7 +35,9 @@ class ShopProvider extends Component {
     this.setState({ checkout: checkout });
   };
 
-  fetchCheckout = async () => {};
+  fetchCheckout = async (checkoutId) => {
+    client.checkout.fetch(checkoutId);
+  };
 
   addItemToCheckout = async () => {};
 
