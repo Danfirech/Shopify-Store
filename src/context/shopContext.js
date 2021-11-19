@@ -58,9 +58,13 @@ class ShopProvider extends Component {
     this.setState({ product: product });
   };
 
-  closeCart = () => {};
+  closeCart = () => {
+    this.setState({ isCartOpen: false });
+  };
 
-  openCart = () => {};
+  openCart = () => {
+    this.setState({ isCartOpen: true });
+  };
 
   closeMenu = () => {};
 
@@ -78,7 +82,7 @@ class ShopProvider extends Component {
           addItemToCheckout: this.addItemToCheckout,
           removeLineItem: this.removeLineItem,
           closeCart: this.closeCart,
-          closeCart: this.openCart,
+          openCart: this.openCart,
           closeMenu: this.closeMenu,
           openMenu: this.openMenu,
         }}
