@@ -1,5 +1,6 @@
 import React, { useContext, useEffect } from "react";
 import { ShopContext } from "../context/shopContext";
+import { Link } from "react-router-dom";
 
 const Home = () => {
   const { fetchAllProducts, products } = useContext(ShopContext);
@@ -13,7 +14,9 @@ const Home = () => {
   return (
     <div>
       {products.map((product) => (
-        <h1>{product.title}</h1>
+        <Link to={`/products/${product.handle}`} key={product.title}>
+          {product.title}
+        </Link>
       ))}
     </div>
   );
