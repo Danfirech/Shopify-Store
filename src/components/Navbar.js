@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { ShopContext } from "../context/shopContext";
-import { Flex, Text, Icon, Image } from "@chakra-ui/react";
+import { Flex, Text, Icon, Image, Box, Badge } from "@chakra-ui/react";
 import { MdMenu, MdShoppingCart } from "react-icons/md";
 import { Link } from "react-router-dom";
 
@@ -13,6 +13,7 @@ const Navbar = () => {
       justifyContent="space-between"
       padding="2rem"
       backgroundColor="#FFA8E2"
+      alignItems="center"
     >
       <Icon
         fill="white"
@@ -31,14 +32,19 @@ const Navbar = () => {
           h={100}
         />
       </Link>
-      <Icon
-        fill="white"
-        as={MdShoppingCart}
-        cursor="pointer"
-        w={30}
-        h={30}
-        onClick={() => openCart()}
-      />
+      <Box>
+        <Icon
+          fill="white"
+          as={MdShoppingCart}
+          cursor="pointer"
+          w={30}
+          h={30}
+          onClick={() => openCart()}
+        />
+        <Badge alignItems="center" backgroundColor="#FF38BD" borderRadius="50%">
+          {checkout.lineItems?.length}
+        </Badge>
+      </Box>
     </Flex>
   );
 };
