@@ -14,7 +14,14 @@ const Navbar = () => {
       padding="2rem"
       backgroundColor="#FFA8E2"
     >
-      <Icon fill="white" as={MdMenu} w={30} h={30} cursor="pointer">
+      <Icon
+        fill="white"
+        as={MdMenu}
+        w={30}
+        h={30}
+        cursor="pointer"
+        onClick={() => openMenu()}
+      >
         Menu
       </Icon>
       <Link to="/">
