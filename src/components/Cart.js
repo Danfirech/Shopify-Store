@@ -12,7 +12,9 @@ import {
   Grid,
   Text,
   Flex,
+  Image,
 } from "@chakra-ui/react";
+import { CloseIcon } from "@chakra-ui/icons";
 
 const Cart = () => {
   const { isCartOpen, closeCart, checkout, removeLineItem } =
@@ -32,6 +34,15 @@ const Cart = () => {
                 <Grid templateColumns="repeat(4,1fr)" gap={1} kes={item.id}>
                   <Flex>
                     <CloseIcon />
+                  </Flex>
+                  <Flex>
+                    <Image src={item.variant.image.src} />
+                  </Flex>
+                  <Flex>
+                    <Text>{item.title}</Text>
+                  </Flex>
+                  <Flex>
+                    <Text>{item.variant.price}</Text>
                   </Flex>
                 </Grid>
               ))}
