@@ -33,7 +33,7 @@ class ShopProvider extends Component {
   createCheckout = async () => {
     const checkout = await client.checkout.create();
     //using local storage/ its called checkout-id and we are saving checkout.id
-    localStorage.setItem("checkout-id", checkout.id);
+    localStorage.setItem("checkout_id", checkout.id);
     this.setState({ checkout: checkout });
   };
 
@@ -46,7 +46,7 @@ class ShopProvider extends Component {
   addItemToCheckout = async (variantId, quantity) => {
     const lineItemsToAdd = [
       {
-        variantId,
+        variantId: variantId,
         quantity: parseInt(quantity, 10),
       },
     ];
