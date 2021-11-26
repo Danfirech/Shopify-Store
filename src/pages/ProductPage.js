@@ -38,9 +38,19 @@ const ProductPage = () => {
           px="2rem"
         >
           <Heading pb="2rem">{product.title}</Heading>
-          <Text>{product.variants[0].price}</Text>
-          <Text>{product.description}</Text>
-          <Button onClick={() => addItemToCheckout(product.variants[0].id, 1)}>
+          <Text fontWeight="bold" pb="2rem">
+            {product.variants[0].price}
+          </Text>
+          <Text pb="2rem" color="gray.500">
+            {product.description}
+          </Text>
+          <Button
+            onClick={() => addItemToCheckout(product.variants[0].id, 1)}
+            _hover={{ opacity: "70%" }}
+            w="10rem"
+            backgroundColor="#FF38BD"
+            color="white"
+          >
             Add To Cart
           </Button>
         </Flex>
