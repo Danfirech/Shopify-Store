@@ -3,6 +3,7 @@ import { ShopContext } from "../context/shopContext";
 import { Link } from "react-router-dom";
 import { Box, Grid, Text, Image } from "@chakra-ui/react";
 import Hero from "../components/Hero";
+import ImageWithText from "../components/ImageWithText";
 
 const Home = () => {
   const { fetchAllProducts, products } = useContext(ShopContext);
@@ -27,6 +28,7 @@ const Home = () => {
           </Link>
         ))}
       </Grid>
+      <ImageWithText reverse image=""></ImageWithText>
     </Box>
   );
 };

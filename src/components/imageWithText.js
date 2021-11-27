@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Flex, Button, Text, Image, Heading } from "@chakra-ui/react";
 
-const imageWithText = ({ reverse }) => {
+const imageWithText = ({ reverse, image, heading }) => {
   const reverseSection = reverse ? "row-reverse" : "row";
 
   return (
@@ -14,7 +14,9 @@ const imageWithText = ({ reverse }) => {
           justifyContent="center"
           alignItems="center"
           p="2rem"
-        ></Flex>
+        >
+          <Heading>{heading && heading}</Heading>
+        </Flex>
       </Flex>
     </Box>
   );
