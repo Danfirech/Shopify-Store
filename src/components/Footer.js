@@ -11,12 +11,12 @@ const Footer = () => {
         fontWeight="bold"
       >
         <Image src="https://cdn.shopify.com/s/files/1/0472/5705/9496/files/Bath_Bomb_-_Product-5_-_trans_1.png?v=1610123549" />
-        <VStack p="2rem">
+        <VStack pt="7rem">
           <Link to="/">The Green Blast</Link>
           <Link to="/">The Blue Berry</Link>
           <Link to="/">The Yellow Mellow</Link>
         </VStack>
-        <VStack p="2rem">
+        <VStack pt="7rem">
           <Link to="/">About us</Link>
           <Link to="/">Learn More</Link>
           <Link to="/">Sustainability</Link>
