@@ -28,7 +28,10 @@ const Home = () => {
           </Link>
         ))}
       </Grid>
-      <ImageWithText reverse image=""></ImageWithText>
+      <ImageWithText
+        image="https://cdn.shopify.com/s/files/1/0472/5705/9496/files/premium-bath-bombs.jpg?v=1610066758"
+        heading="Heading"
+      />
     </Box>
   );
 };
