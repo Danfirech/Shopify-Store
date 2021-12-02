@@ -28,7 +28,7 @@ const Cart = () => {
         <DrawerOverlay />
         <DrawerContent>
           <DrawerCloseButton />
-          <DrawerHeader>your Shopping Cart</DrawerHeader>
+          <DrawerHeader>Your Shopping Cart</DrawerHeader>
 
           <DrawerBody>
             {checkout.lineItems?.length ? (

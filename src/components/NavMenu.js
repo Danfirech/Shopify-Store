@@ -29,7 +29,7 @@ const NavMenu = () => {
         placement="left"
         size="sm"
       >
-        <DrawerOverlay>
+        <DrawerOverlay opacity=".5">
           <DrawerContent>
             <DrawerCloseButton />
             <DrawerHeader>Menu</DrawerHeader>
