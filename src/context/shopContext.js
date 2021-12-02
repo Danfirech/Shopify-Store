@@ -5,8 +5,8 @@ const ShopContext = React.createContext();
 
 // Initializing a client to return content in the store's primary language
 const client = Client.buildClient({
-  domain: process.env.REACT_APP_SHOPIFY_DOMAIN,
   storefrontAccessToken: process.env.REACT_APP_SHOPIFY_API,
+  domain: process.env.REACT_APP_SHOPIFY_DOMAIN,
 });
 
 // Add STATE which will handle all of our data
