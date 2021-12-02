@@ -48,7 +48,7 @@ const Home = () => {
       />
       <PicWithText
         reverse
-        image="https://cdn.shopify.com/s/files/1/0472/5705/9496/files/premium-bath-bombs.jpg?v=1610066758"
+        image="https://reviewed-com-res.cloudinary.com/image/fetch/s--BCvg2tyT--/b_white,c_limit,cs_srgb,f_auto,fl_progressive.strip_profile,g_center,q_auto,w_1200/https://reviewed-production.s3.amazonaws.com/1611676532795/kobeza.jpg"
         heading="Heading"
         text=" They rushed out the door, grabbing anything and everything they could think of they might need. There was no time to double-check to make sure they weren't leaving something important behind. Everything was thrown into the car and they sped off. Thirty minutes later they were safe and that was when it dawned on them that they had forgotten the most important thing of all."
       />
