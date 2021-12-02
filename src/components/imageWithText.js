@@ -1,7 +1,7 @@
 import React from "react";
 import { Box, Flex, Button, Text, Image, Heading } from "@chakra-ui/react";
 
-const imageWithText = ({ reverse, image, heading, text }) => {
+const ImageWithText = ({ reverse, image, heading, text }) => {
   const reverseSection = reverse ? "row-reverse" : "row";
 
   return (
@@ -31,4 +31,4 @@ const imageWithText = ({ reverse, image, heading, text }) => {
   );
 };
 
-export default imageWithText;
+export default ImageWithText;
